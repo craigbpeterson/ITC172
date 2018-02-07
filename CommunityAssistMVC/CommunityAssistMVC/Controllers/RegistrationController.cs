@@ -28,7 +28,7 @@ namespace CommunityAssistMVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register([Bind(Include = "LastName, FirstName, Email, Password, Apartment, Street, City, State, Zipcode, Phone")]NewPerson p)
+        public ActionResult Register([Bind(Include = "LastName, FirstName, Email, PlainPassword, Apartment, Street, City, State, Zipcode, Phone")]NewPerson p)
         {
             int result = db.usp_Register(
                 p.LastName, 
