@@ -20,12 +20,14 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <!-- for these links, first string is the text that appears in the nav, second string is name of the view file, third string is the view folder name -->
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Categories", "Index", "Categories")</li>
                     <li>@Html.ActionLink("Registration", "Index", "Registration")</li>
                     <li>@Html.ActionLink("Login", "Index", "Login")</li>
+                    <li>@Html.ActionLink("Add Book", "Index", "NewBook")</li>
                 </ul>
             </div>
         </div>
